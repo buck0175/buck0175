@@ -640,6 +640,39 @@ footer a {
   .portfolio-container .portfolio-thumbnail {
     margin: 30px 60px;
   }
+
+  .preview {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .screen {
+    height: 78px;
+    width: 350px;
+    z-index: 1;
+    position: absolute;
+    top: 246px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .project-description {
+    flex-basis: auto;
+    margin: 0 40px;
+    height: 100px;
+    text-align: center;
+  }
+
+  .project-description p {
+    line-height: 1.3rem;
+    font-weight: 300;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+  }
+
+  .computer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -657,6 +690,57 @@ footer a {
 
   .portfolio-container .portfolio-thumbnail {
     margin: 20px 30px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    flex-basis: auto;
+  }
+
+  .features .box {
+    margin: 0 auto 40px;
+    height: 200px;
+    width: 80%;
+    flex-basis: 31%;
+    background-color: #A3ECDA;
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .features .box .content {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .features .box .content p,
+  .features .box .content ul li {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .features .box .content ul {
+    margin-top: 10px;
+  }
+
+  .features .box .content ul li {
+    list-style: disc;
+    margin-left: 20px
+  }
+  .features {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 0 40px;
   }
 
 }
