@@ -438,7 +438,7 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   justify-content: space-between;
   padding: 50px 0;
 }
@@ -632,6 +632,14 @@ footer a {
     height: 300px;
     margin: 40px auto;
   }
+
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .portfolio-container .portfolio-thumbnail {
+    margin: 30px 60px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -645,6 +653,10 @@ footer a {
 
   .project {
     width: 90%;
+  }
+
+  .portfolio-container .portfolio-thumbnail {
+    margin: 20px 30px;
   }
 
 }
