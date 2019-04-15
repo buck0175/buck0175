@@ -502,7 +502,6 @@ footer a {
 
 .project-description {
   flex-basis: 50%;
-  height: 100px;
 }
 
 .project-description p {
@@ -673,6 +672,10 @@ footer a {
   .computer {
     display: none;
   }
+
+  .features-container {
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -686,6 +689,16 @@ footer a {
 
   .project {
     width: 90%;
+  }
+
+  .project-description p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .preview {
+    margin-top: 30px;
+    margin-bottom: 250px;
   }
 
   .portfolio-container .portfolio-thumbnail {
@@ -740,7 +753,7 @@ footer a {
   .about-container {
     max-width: 80%;
     margin: 0 auto;
-    padding: 0 0 40px;
+    padding: 0 0 100px;
   }
 
 }
