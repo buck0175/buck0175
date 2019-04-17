@@ -1,0 +1,102 @@
+.preview {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding-bottom: 100px;
+}
+
+.screen {
+  height: 250px;
+  width: 527px;
+  z-index: 1;
+  position: absolute;
+  top: 246px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.screen img {
+  object-fit: cover;
+  width: 527px;
+  border: none;
+  position: absolute;
+  animation-name: screenScroll;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.project-description {
+  flex-basis: 50%;
+}
+
+.project-description p {
+  line-height: 1.3rem;
+  font-weight: 300;
+  color: rgba(0,0,0,0.7);
+  font-size: 14px;
+}
+
+.computer #Layer_1 {
+  height: 300px;
+  flex-basis: 50%;
+}
+
+.computer #scroll {
+  animation-name: scroll;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.computer #scroll:hover {
+  animation-name: tilt;
+  animation-duration: 3s;
+}
+
+.features {
+  height: 500px;
+  width: 100%;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features .box {
+  height: 200px;
+  width: 200px;
+  flex-basis: 31%;
+  background-color: #A3ECDA;
+  position: relative;
+  top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  color: white;
+}
+
+.features .box .content {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.features .box .content p,
+.features .box .content ul li {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.features .box .content ul {
+  margin-top: 10px;
+}
+
+.features .box .content ul li {
+  list-style: disc;
+  margin-left: 20px
+}

@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px) {
+  .skills {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .inner-box {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-right: none;
+  }
+
+  .inner-box:first-child {
+    border-top: none;
+  }
+
+  .inner-box:last-child {
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+  }
+  .about-me .about-content {
+    max-width: 80%;
+  }
+
+  .recent-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 70%;
+    height: 300px;
+    margin: 40px auto;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .portfolio-container .portfolio-thumbnail {
+    margin: 30px 60px;
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .screen {
+    height: 78px;
+    width: 350px;
+    z-index: 1;
+    position: absolute;
+    top: 246px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .project-description {
+    flex-basis: auto;
+    margin: 0 40px;
+    height: 100px;
+    text-align: center;
+  }
+
+  .project-description p {
+    line-height: 1.3rem;
+    font-weight: 300;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+  }
+
+  .computer {
+    display: none;
+  }
+
+  .features-container {
+    justify-content: space-around;
+  }
+}

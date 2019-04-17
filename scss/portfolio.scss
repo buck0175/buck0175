@@ -1,0 +1,41 @@
+
+.portfolio {
+  background-color: rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.portfolio-thumbnail {
+  height: 250px;
+  flex-basis: 48%;
+  margin: 20px 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 3px 7px rgba(0,0,0,0.20);
+  border-radius: 10px;
+}
+
+.portfolio a {
+  color: white;
+}
+
+.portfolio-thumbnail h3 {
+  font-size: 30px;
+}
+
+.portfolio-thumbnail p {
+  font-weight: 300;
+}
