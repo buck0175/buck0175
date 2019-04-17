@@ -11,26 +11,31 @@ header {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-}
-
-header a {
-  color: #5be7c4;
-}
-
-header #logo {
-  height: 60px;
-  margin-left: 10px;
-}
-
-header nav ul {
-  display: flex;
-  align-items: center;
-}
-
-header nav li {
-  padding: 0 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-
+  a {
+    color: #5be7c4;
+  }
+  #logo {
+    height: 60px;
+    margin-left: 10px;
+  }
+  nav {
+    a {
+      &:hover {
+        color: #18b28b;
+        transition: 0.4s;
+        cursor: pointer;
+        border-bottom: 2px solid #18b28b;
+      }
+    }
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    padding: 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
